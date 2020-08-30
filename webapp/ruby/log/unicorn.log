@@ -1,0 +1,23 @@
+I, [2020-08-30T18:09:19.084065 #3986]  INFO -- : Refreshing Gem list
+E, [2020-08-30T18:09:19.136044 #3986] ERROR -- : adding listener failed addr=0.0.0.0:8080 (in use)
+E, [2020-08-30T18:09:19.136125 #3986] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2020-08-30T18:09:19.636446 #3986] ERROR -- : adding listener failed addr=0.0.0.0:8080 (in use)
+E, [2020-08-30T18:09:19.636539 #3986] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2020-08-30T18:09:20.136902 #3986] ERROR -- : adding listener failed addr=0.0.0.0:8080 (in use)
+E, [2020-08-30T18:09:20.137000 #3986] ERROR -- : retrying in 0.5 seconds (2 tries left)
+E, [2020-08-30T18:09:20.637319 #3986] ERROR -- : adding listener failed addr=0.0.0.0:8080 (in use)
+E, [2020-08-30T18:09:20.637410 #3986] ERROR -- : retrying in 0.5 seconds (1 tries left)
+E, [2020-08-30T18:09:21.137757 #3986] ERROR -- : adding listener failed addr=0.0.0.0:8080 (in use)
+E, [2020-08-30T18:09:21.137860 #3986] ERROR -- : retrying in 0.5 seconds (0 tries left)
+E, [2020-08-30T18:09:21.638202 #3986] ERROR -- : adding listener failed addr=0.0.0.0:8080 (in use)
+/home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:185:in `bind': Address already in use - bind(2) for 0.0.0.0:8080 (Errno::EADDRINUSE)
+	from /home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:185:in `new_tcp_server'
+	from /home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:165:in `bind_listen'
+	from /home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:242:in `listen'
+	from /home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `block in bind_new_listeners!'
+	from /home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `each'
+	from /home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `bind_new_listeners!'
+	from /home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:138:in `start'
+	from /home/isucon/.local/ruby/lib/ruby/gems/2.1.0/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /home/isucon/.local/ruby/bin/unicorn:23:in `load'
+	from /home/isucon/.local/ruby/bin/unicorn:23:in `<main>'
